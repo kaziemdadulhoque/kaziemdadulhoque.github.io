@@ -42,6 +42,21 @@ detailCards.forEach(card => {
   card.setAttribute('aria-label', `Open details for ${card.querySelector('h3')?.textContent || 'this item'}`);
   const open = () => {
     dialogContent.innerHTML = `<p class="dialog-label">SELECTED DETAIL</p>${card.innerHTML}`;
+    const detailImage = dialogContent.querySelector('img');
+    if (detailImage) {
+      detailImage.loading = 'eager';
+      detailImage.title = 'Click to open the full-resolution image';
+      detailImage.setAttribute('aria-label', 'Open full-resolution image');
+      detailImage.tabIndex = 0;
+      const openFullImage = () => window.open(detailImage.currentSrc || detailImage.src, '_blank', 'noopener,noreferrer');
+      detailImage.addEventListener('click', openFullImage);
+      detailImage.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openFullImage();
+        }
+      });
+    }
     dialog.showModal();
     closeButton.focus();
   };

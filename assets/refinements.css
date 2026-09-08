@@ -90,10 +90,11 @@ body.dark .about-copy h3 { color: var(--text); }
 .contact-grid i { background: var(--soft-rose); color: var(--accent2); }
 .contact-grid > a:hover { border-color: var(--accent2); box-shadow: var(--shadow); }
 
-.detail-dialog { width: min(900px, calc(100% - 36px)); max-height: 88vh; border: 1px solid rgba(255,255,255,.3); border-radius: 22px; background: var(--surface); color: var(--text); padding: 0; box-shadow: 0 32px 75px rgba(38,52,58,.24); }
+.detail-dialog { width: min(1200px, calc(100% - 36px)); max-height: 92vh; border: 1px solid rgba(255,255,255,.3); border-radius: 22px; background: var(--surface); color: var(--text); padding: 0; box-shadow: 0 32px 75px rgba(38,52,58,.24); }
 .detail-dialog::backdrop { background: rgba(33,44,48,.68); backdrop-filter: blur(9px); }
 .dialog-content { padding: 55px; }
-.dialog-content img { max-height: 430px; object-fit: cover; border-radius: 16px; margin-bottom: 28px; }
+.dialog-content img { width: auto; max-width: 100%; height: auto; max-height: none; object-fit: contain; object-position: center; border-radius: 16px; margin: 0 auto 28px; cursor: zoom-in; background: color-mix(in srgb, var(--bg) 92%, transparent); }
+.dialog-content img:focus-visible { outline: 3px solid color-mix(in srgb, var(--accent2) 55%, transparent); outline-offset: 4px; }
 .dialog-content .logo-tile, .dialog-content .award { margin-bottom: 18px; }
 .dialog-content h3 { font-size: clamp(1.6rem, 3vw, 2.6rem); margin: 8px 0; letter-spacing: -.025em; }
 .dialog-content h4 { color: var(--muted); margin: 0 0 20px; }
