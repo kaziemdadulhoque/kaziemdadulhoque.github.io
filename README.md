@@ -1,7 +1,15 @@
-# Kazi Emdadul Hoque — Soft Premium Portfolio
+# Kazi Emdadul Hoque — Architectural Visualization & BIM Portfolio
 
-Responsive architectural portfolio with a warm ivory, muted sage, dusty terracotta and deep-slate colour system. Includes section navigation, clickable career journey, project and credential detail dialogs, active navigation state, dark mode, and Kazi's own content and imagery.
+A responsive, soft-cold premium portfolio presenting BIM, architectural visualization, plans, hospitality, industrial and exhibition work, animation, research and photography.
 
-Upload `index.html`, `README.md`, and the complete `assets` folder to the root of the GitHub Pages repository.
+## Portfolio structure
 
-Both certificate cards include optimized previews and links to the original PDF documents.
+- `index.html` — main profile and portfolio directory
+- `work.html` — dynamic collection pages for eight disciplines
+- `project.html` — detailed project narratives and media galleries
+- `assets/portfolio-data.js` — project titles, descriptions, roles and media captions
+- `assets/portfolio-media/` — optimized previews, high-resolution images and sound-enabled videos
+
+Still images preserve their original aspect ratios in detailed views and open in a full-screen high-resolution viewer. Videos use browser-compatible H.264 video and AAC stereo sound.
+
+Upload every file and folder inside this package to the root of the GitHub Pages repository.
