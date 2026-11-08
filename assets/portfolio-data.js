@@ -1,6 +1,6 @@
 window.PORTFOLIO_DATA = {
   categories: [
-    {id:'bim',number:'01',title:'BIM Projects',subtitle:'Integrated workflows from concept and CAD to coordinated BIM documentation.',cover:'residential-duplex/preview/01-final-visualization.webp'},
+    {id:'bim',number:'01',title:'BIM Projects',subtitle:'Integrated workflows from concept and CAD to coordinated BIM documentation.',cover:'residential-duplex/preview/01-bim-cover.webp'},
     {id:'exterior',number:'02',title:'Exterior Visualization',subtitle:'Photorealistic residential, mixed-use and hospitality environments across daylight and dusk.',cover:'glen-homes-dusk/preview/01-glen-homes.webp'},
     {id:'interior',number:'03',title:'Interior Visualization',subtitle:'Residential and amenity interiors shaped through light, materials and purposeful composition.',cover:'lake-view-residence/preview/01-formal-living.webp'},
     {id:'plans',number:'04',title:'2D & 3D Plans',subtitle:'Clear spatial communication through illustrated plans, site studies and sectional dollhouses.',cover:'dollhouse-visualization/preview/01-dollhouse.webp'},
